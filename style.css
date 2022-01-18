@@ -4,6 +4,9 @@ header {
   background-size: cover;
   color: white;
 }
+h2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .navigation-bar {
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
@@ -45,4 +48,15 @@ article {
   margin: 20px 10px;
   display: inline;
   max-width: 350px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .horizontal {
+    width: 95%;
+  }
 }
