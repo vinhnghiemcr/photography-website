@@ -1,23 +1,31 @@
+html {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 header {
   text-align: center;
   background: url("./images/avatar-bg.jpg");
   background-size: cover;
   color: white;
+  padding: 10px;
 }
-h2 {
-  background-color: rgba(0, 0, 0, 0.2);
+h1 {
+  margin-bottom: 0;
 }
 .navigation-bar {
-  padding: 10px;
   background: rgba(0, 0, 0, 0.5);
 }
 ul li {
   display: inline;
   padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
 }
 ul a {
-  color: white;
-  margin-bottom: 10px;
+  color: rgb(42, 6, 110);
+  padding: 5px;
+}
+ul a:hover {
+  background-color: darkcyan;
 }
 .avatar {
   max-width: 150px;
@@ -27,36 +35,52 @@ ul a {
   border-radius: 20px;
 }
 
-.horizontal {
-  max-width: 500px;
-  height: auto;
-}
-article {
-  display: inline;
-  padding: 20px;
-  margin: 0 auto;
+h2 {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.vertical {
-  max-width: 350px;
+.portrait-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.portrait-horizontal img {
+  max-width: 300px;
+  min-width: 0;
+  flex: 1;
+  margin: 10px;
+  border: 1px solid black;
+}
+.portrait-vertical {
+  display: flex;
+  justify-content: space-between;
+}
+.portrait-vertical img {
+  max-width: 200px;
+  min-width: 0;
+  flex: 1;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.family-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.family-horizontal img {
+  max-width: 200px;
+  min-width: 0;
+  min-width: 0;
   height: auto;
-}
-.family {
-  padding-left: 40px;
-}
-.family img {
-  margin: 20px 10px;
-  display: inline;
-  max-width: 350px;
+  flex: 1;
+  margin: 10px;
+  border: 1px solid black;
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 30px;
-  }
-  h2 {
     font-size: 20px;
   }
-  .horizontal {
-    width: 80%;
+  h2 {
+    font-size: 14px;
   }
 }
